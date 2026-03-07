@@ -17,7 +17,7 @@ export async function sendContactEmail(contact: InsertContact) {
     });
 
     const mailOptions = {
-      from: `REYD Telecom Webpage <${process.env.SMTP_USER}>`,
+      from: 'REYD Telecom Webpage <bgmabs@gmail.com>',
       to: 'valmabs4@gmail.com',
       subject: `New Contact Form Submission from ${contact.name}`,
       text: `Name: ${contact.name}\nEmail: ${contact.email}\nPhone: ${contact.phone}\nMessage: ${contact.message}`,
