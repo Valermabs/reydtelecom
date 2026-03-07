@@ -50,7 +50,7 @@ export function Contact() {
             <h2 className="text-primary font-semibold tracking-wider uppercase text-sm mb-3">Get In Touch</h2>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">Let's Secure Your Future</h3>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-              Ready to upgrade your security or network infrastructure? Contact our team of experts for a free consultation and customized quote.
+              For inquiries and quotations on high-definition video monitoring and DAHUA Full Color IR Bullet Cameras, contact Engr. Reynald. Serving Cagayan de Oro and nearby areas.
             </p>
 
             <div className="space-y-8">
@@ -61,7 +61,7 @@ export function Contact() {
                 <div>
                   <h4 className="text-white font-semibold text-lg mb-1">Call Us</h4>
                   <p className="text-slate-400">Mon-Fri from 8am to 6pm</p>
-                  <a href="tel:+1234567890" className="text-primary hover:text-cyan-400 transition-colors font-medium mt-1 inline-block">+1 (555) 123-4567</a>
+                  <a href="tel:09265358893" className="text-primary hover:text-cyan-400 transition-colors font-medium mt-1 inline-block">0926-535-8893</a>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export function Contact() {
                 <div>
                   <h4 className="text-white font-semibold text-lg mb-1">Email Us</h4>
                   <p className="text-slate-400">Our friendly team is here to help.</p>
-                  <a href="mailto:info@reydtelecom.com" className="text-primary hover:text-cyan-400 transition-colors font-medium mt-1 inline-block">info@reydtelecom.com</a>
+                  <a href="mailto:reydtelecom@gmail.com" className="text-primary hover:text-cyan-400 transition-colors font-medium mt-1 inline-block">reydtelecom@gmail.com</a>
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-lg mb-1">Visit Us</h4>
-                  <p className="text-slate-400">123 Tech Boulevard<br />Innovation District, TX 75001</p>
+                  <p className="text-slate-400">Cagayan de Oro, Philippines</p>
                 </div>
               </div>
             </div>

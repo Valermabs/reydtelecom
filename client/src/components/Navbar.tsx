@@ -43,15 +43,10 @@ export function Navbar() {
             className="flex items-center gap-2 cursor-pointer group"
             onClick={() => scrollTo("home")}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
-              <ShieldAlert className="w-6 h-6 text-white" />
-            </div>
+            <img src="/reyd-logo.jfif" alt="REYD Telecommunication Services Logo" className="w-12 h-12 rounded-xl shadow-lg group-hover:shadow-primary/30 transition-all duration-300 bg-white object-contain" />
             <div className="flex flex-col">
               <span className={`font-display font-bold text-lg leading-tight ${isScrolled ? "text-slate-900" : "text-white"} transition-colors duration-300`}>
-                REYD
-              </span>
-              <span className={`text-[10px] uppercase tracking-wider font-semibold ${isScrolled ? "text-slate-500" : "text-slate-300"} transition-colors duration-300`}>
-                Telecommunications
+                REYD Telecommunication Services
               </span>
             </div>
           </div>

@@ -38,7 +38,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 text-balance leading-relaxed">
-              REYD Telecommunication Services provides industry-leading CCTV, networking, and comprehensive security solutions for businesses and homes.
+              REYD Telecommunication Services is a Cagayan de Oro-based company providing computer and surveillance services, including high-definition video monitoring installations. Specializing in DAHUA Full Color IR Bullet Cameras for reliable security.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

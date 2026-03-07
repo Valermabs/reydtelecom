@@ -16,7 +16,7 @@ export function Footer() {
               <span className="font-display font-bold text-xl text-white tracking-tight">REYD</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Securing businesses and homes with cutting-edge telecommunication and CCTV solutions since 2010.
+              Cagayan de Oro-based provider of computer and surveillance services. Specializing in high-definition video monitoring and DAHUA Full Color IR Bullet Cameras.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all duration-300">
@@ -67,7 +67,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            &copy; {currentYear} REYD Telecommunication Services. All rights reserved.
+            &copy; {currentYear} REYD Telecommunication Services, Cagayan de Oro. All rights reserved.
           </p>
           <p className="text-slate-500 text-sm">
             Authorized Partner of <span className="text-slate-300 font-medium">Dahua</span> & <span className="text-slate-300 font-medium">Hikvision</span>

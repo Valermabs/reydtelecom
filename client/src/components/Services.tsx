@@ -5,33 +5,43 @@ export function Services() {
   const services = [
     {
       icon: <Cctv className="w-8 h-8 text-primary" />,
-      title: "CCTV Installation",
-      description: "Professional design and installation of high-definition security camera systems tailored to your property layout."
+      title: "Video Surveillance Installation",
+      description: "Expert installation of high-definition video monitoring and surveillance systems for homes and businesses in Cagayan de Oro."
     },
     {
       icon: <Network className="w-8 h-8 text-cyan-500" />,
-      title: "Network Infrastructure",
-      description: "Robust structured cabling, Wi-Fi deployment, and enterprise-grade networking solutions for seamless connectivity."
+      title: "Access Control System Installation",
+      description: "Professional installation of access control systems for secure entry management in offices and buildings."
+    },
+    {
+      icon: <Network className="w-8 h-8 text-cyan-500" />,
+      title: "Data and Voice Cabling",
+      description: "Structured cabling solutions for reliable data and voice communication infrastructure."
+    },
+    {
+      icon: <Network className="w-8 h-8 text-cyan-500" />,
+      title: "Telephone/PABX System Installation",
+      description: "Installation and configuration of telephone and PABX systems for seamless business communication."
     },
     {
       icon: <Fingerprint className="w-8 h-8 text-blue-600" />,
-      title: "Access Control",
-      description: "Biometric and card-based entry systems to restrict and monitor physical access to your sensitive areas."
+      title: "Specialization: DAHUA Cameras",
+      description: "Installation and support for DAHUA Full Color IR Bullet Cameras, providing advanced security and night vision."
     },
     {
       icon: <Wrench className="w-8 h-8 text-indigo-500" />,
       title: "Maintenance & Support",
-      description: "Comprehensive troubleshooting, repairs, and preventative maintenance to keep your systems online 24/7."
+      description: "Ongoing maintenance, repairs, and support for all installed surveillance and computer systems."
     },
     {
       icon: <HardDrive className="w-8 h-8 text-teal-500" />,
       title: "Storage Solutions",
-      description: "Secure NVR/DVR setups and cloud integration ensuring your surveillance footage is safely retained and accessible."
+      description: "Secure storage solutions for surveillance footage, including NVR/DVR setup and cloud integration."
     },
     {
       icon: <Shield className="w-8 h-8 text-sky-500" />,
-      title: "Security Audits",
-      description: "Comprehensive vulnerability assessments of your current telecommunication and physical security posture."
+      title: "Consultation & Quotation",
+      description: "Free consultation and customized quotations for surveillance and computer service needs."
     }
   ];
 

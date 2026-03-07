@@ -1,15 +1,12 @@
-import { db } from "./db";
-import { contacts, type InsertContact, type ContactResponse } from "@shared/schema";
+import type { InsertContact } from "@shared/schema";
+import { sendContactEmail } from "./email";
 
-export interface IStorage {
-  createContact(contact: InsertContact): Promise<ContactResponse>;
-}
-
-export class DatabaseStorage implements IStorage {
-  async createContact(contact: InsertContact): Promise<ContactResponse> {
-    const [newContact] = await db.insert(contacts).values(contact).returning();
-    return newContact;
+export async function createContact(contact: InsertContact): Promise<{ success: boolean }> {
+  try {
+    await sendContactEmail(contact);
+    return { success: true };
+  } catch (err) {
+    console.error('Error in createContact:', err);
+    throw err;
   }
 }
-
-export const storage = new DatabaseStorage();

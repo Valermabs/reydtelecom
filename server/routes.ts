@@ -1,6 +1,6 @@
 import type { Express } from "express";
 import type { Server } from "http";
-import { storage } from "./storage";
+import { createContact } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
 
@@ -12,8 +12,8 @@ export async function registerRoutes(
   app.post(api.contacts.create.path, async (req, res) => {
     try {
       const input = api.contacts.create.input.parse(req.body);
-      const contact = await storage.createContact(input);
-      res.status(201).json(contact);
+      await createContact(input);
+      res.status(201).json({ success: true });
     } catch (err) {
       if (err instanceof z.ZodError) {
         return res.status(400).json({
@@ -21,7 +21,8 @@ export async function registerRoutes(
           field: err.errors[0].path.join('.'),
         });
       }
-      throw err;
+      console.error('Internal server error in /api/contacts:', err);
+      res.status(500).json({ message: 'Internal server error', error: err instanceof Error ? err.message : String(err) });
     }
   });
 

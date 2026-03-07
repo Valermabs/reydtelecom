@@ -21,7 +21,10 @@ export function useCreateContact() {
         throw new Error("An unexpected error occurred. Please try again later.");
       }
 
-      return api.contacts.create.responses[201].parse(await res.json());
+      // Expecting { success: true } from backend
+      const result = await res.json();
+      if (!result.success) throw new Error("Failed to send message.");
+      return result;
     },
     onSuccess: () => {
       toast({
